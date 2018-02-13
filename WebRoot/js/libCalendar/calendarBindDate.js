@@ -10,7 +10,9 @@ function calendarBindDate(date)
 	var _monthDays = new Array(31,30,31,30,31,30,31,31,30,31,30,31);	
 	var _arr = date.split('-');		
 	var _date = new Date(_arr[0],_arr[1]-1,_arr[2]);	
-	if(isNaN(_date)) _date = new Date();	
+	if(isNaN(_date)){ 
+		_date = new Date();
+		}
 	this.date = _date;
 	this.bindHeader();	
 	var _year = _date.getFullYear(); var _month = _date.getMonth(); var _day = 1;	

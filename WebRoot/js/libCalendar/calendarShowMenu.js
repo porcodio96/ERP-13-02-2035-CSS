@@ -31,6 +31,6 @@ function calendarShowMenu(isyear)
 		_menu.style.left = _obj.offsetLeft + 'px';	
 		_menu.style.width = _obj.offsetWidth + 'px';
 	}
-	if (this.timer != null) clearTimeout(this.timer);
+	if (this.timer != null){ clearTimeout(this.timer);}
 	_menu.style.display="";
 }

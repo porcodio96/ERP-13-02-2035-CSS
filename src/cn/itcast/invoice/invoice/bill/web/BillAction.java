@@ -48,29 +48,10 @@ public class BillAction extends BaseAction{
 	 *
 	 */
 	public String buyBill(){
-		/*
-		select 
-			g.uuid,		
-			g.name,			
-			sum(od.num)
-		from 
-			tbl_orderdetail od,
-			tbl_goods g
-		where
-			od.goodsUuid = g.uuid
-		group by
-			od.goodsUuid 
-		*/
+		
 		//Ã¨Å½Â·Ã¥ï¿½â€“Ã©â€¡â€¡Ã¨Â´Â­Ã¦Å Â¥Ã¨Â¡Â¨Ã¦â€¢Â°Ã¦ï¿½Â®
 		List<Object[]> billList = billEbi.getBillByGoods(bqm);
-		/*
-		for(Object[] objs:billList){
-			GoodsModel temp = (GoodsModel) objs[0];
-			Long sum = (Long) objs[1];
-			System.out.println(temp.getName()+","+sum);
-			System.out.println("------------------");
-		}
-		*/
+		
 		put("billList",billList);
 		//Ã¥Å Â Ã¨Â½Â½Ã¦â€°â‚¬Ã¦Å“â€°Ã¤Â¾â€ºÃ¥Âºâ€�Ã¥â€¢â€ Ã¦â€¢Â°Ã¦ï¿½Â®
 		List<SupplierModel> supplierList = supplierEbi.getAll();

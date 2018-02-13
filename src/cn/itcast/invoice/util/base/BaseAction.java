@@ -71,15 +71,6 @@ public class BaseAction extends ActionSupport{
 		String subName = actionName.substring(0,actionName.length()-6);
 		return subName.substring(0,1).toLowerCase()+subName.substring(1);
 	} 
-	/*
-	public static void main(String[] args) {
-		String s = "StoreDetailAction";
-		String a = s.substring(0,s.length()-6);
-		//å�–å‡ºç¬¬ä¸€ä¸ªå­—æ¯�
-		String first = a.substring(0,1).toLowerCase();
-		System.out.println(first+a.substring(1));
-	}
-	*/
 	
 	protected void setDataTotal(Integer dataTotal){
 		this.dataTotal = dataTotal;

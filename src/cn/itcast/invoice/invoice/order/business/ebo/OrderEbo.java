@@ -253,9 +253,7 @@ public class OrderEbo implements OrderEbi{
 	static{
 		taskTypesSet = new HashSet<Integer>();
 		taskTypesSet.add(OrderModel.ORDER_TYPE_OF_BUY_CHECK_PASS);
-		//taskTypesSet.add(OrderModel.);
-		//taskTypesSet.add(OrderModel.);
-		//taskTypesSet.add(OrderModel.);
+		
 	}
 	
 	/**
@@ -273,12 +271,8 @@ public class OrderEbo implements OrderEbi{
 		}
 		//å½“å‰�ä»»åŠ¡åˆ†é…�å®Œæ¯•å�Žï¼Œåˆ‡æ�¢çŠ¶æ€�ä¸ºæ­£åœ¨é‡‡è´­
 		//é‡‡è´­å’Œé‡‡è´­é€€è´§éƒ½å½’å�Œä¸€ä¸ªäººå®¡æ‰¹
-		//if(åŽŸå§‹æ˜¯é‡‡è´­ä¸šåŠ¡ï¼Œä¿®æ”¹ä¸ºé‡‡è´­....)
-		//else if(åŽŸå§‹æ˜¯é‡‡è´­é€€è´§ä»»åŠ¡,ä¿®æ”¹ä¸ºé‡‡è´­é€€è´§....)
-		//else if(åŽŸå§‹æ˜¯é‡‡è´­é€€è´§ä»»åŠ¡,ä¿®æ”¹ä¸ºé‡‡è´­é€€è´§....)
-		//else if(åŽŸå§‹æ˜¯é‡‡è´­é€€è´§ä»»åŠ¡,ä¿®æ”¹ä¸ºé‡‡è´­é€€è´§....)
+		
 		temp.setType(OrderModel.ORDER_TYPE_OF_BUY_BUYING);
-		//ä¿®æ”¹ä»»åŠ¡äºº
 		temp.setCompleter(om.getCompleter());
 	}
 
@@ -297,11 +291,7 @@ public class OrderEbo implements OrderEbi{
 	 */
 	public void endTask(Long uuid) {
 		OrderModel om = orderDao.get(uuid);
-		/*
-		if(....){
-			throw new AppException("å¯¹ä¸�èµ·,è¯·ä¸�è¦�è¿›è¡Œé�žæ³•æ“�ä½œï¼�");
-		}
-		*/
+		
 		//ä»…éœ€è¦�ä¿®æ”¹ä¸€ä¸ªçŠ¶æ€�
 		om.setType(OrderModel.ORDER_TYPE_OF_BUY_IN_STORE);
 	}

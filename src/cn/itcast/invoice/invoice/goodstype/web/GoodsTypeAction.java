@@ -130,10 +130,5 @@ public class GoodsTypeAction extends BaseAction{
 		//Ã¥Â°â€ Ã¥Â¯Â¹Ã¥Âºâ€�ActionÃ§Â±Â»Ã¤Â¸Â­Ã¦â€°â‚¬Ã¦Å“â€°getÃ¥Â¼â‚¬Ã¥Â¤Â´Ã§Å¡â€žÃ¦â€“Â¹Ã¦Â³â€¢Ã¥Â¯Â¹Ã¥Âºâ€�Ã§Å¡â€žÃ¦â€¢Â°Ã¦ï¿½Â®Ã¯Â¼Å’Ã¨Â½Â¬Ã¦ï¿½Â¢Ã¤Â¸ÂºjsonÃ¦Â Â¼Ã¥Â¼ï¿½Ã¯Â¼Å’jsonÃ¥Â±Å¾Ã¦â‚¬Â§Ã¥ï¿½ï¿½Ã¤Â¸ÂºgetÃ¦â€“Â¹Ã¦Â³â€¢Ã§Å¡â€žÃ¥ï¿½ï¿½Ã§Â§Â°(Ã¤Â¸ï¿½Ã¥Å’â€¦Ã¥ï¿½Â«get)
 		return "ajaxGetGtmBySupplier";
 	}
-	/*
-	//{"abc":"heihei"}
-	public String getAbc(){
-		return "heihei";
-	}
-	*/
+
 }

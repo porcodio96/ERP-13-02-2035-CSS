@@ -14,10 +14,10 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  *
  */
 public abstract class BaseDaoImpl<T> extends HibernateDaoSupport{
-	//Ã¥Â½â€œÃ¥â€°ï¿½Ã§Â±Â»Ã¤Â¸Â­Ã¦Â³â€ºÃ¥Å¾â€¹Ã§Å¡â€žÃ§Â±Â»Ã¥Å¾â€¹
+	//ÃƒÂ¥Ã‚Â½Ã¢â‚¬Å“ÃƒÂ¥Ã¢â‚¬Â°Ã¯Â¿Â½ÃƒÂ§Ã‚Â±Ã‚Â»ÃƒÂ¤Ã‚Â¸Ã‚Â­ÃƒÂ¦Ã‚Â³Ã¢â‚¬ÂºÃƒÂ¥Ã…Â¾Ã¢â‚¬Â¹ÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ§Ã‚Â±Ã‚Â»ÃƒÂ¥Ã…Â¾Ã¢â‚¬Â¹
 	private Class<T> entityClass;
 	
-	//Ã¤Â½â€¢Ã¦â€”Â¶Ã¥Ë†ï¿½Ã¥Â§â€¹Ã¥Å’â€“:Ã¥Â½â€œÃ¥â€°ï¿½Ã§Â±Â»Ã§Å¡â€žÃ¥Â¯Â¹Ã¨Â±Â¡Ã¥Ë†â€ºÃ¥Â»ÂºÃ¥Â®Å’Ã¦Â¯â€¢Ã¤Â¹â€¹Ã¥â€°ï¿½
+	//ÃƒÂ¤Ã‚Â½Ã¢â‚¬Â¢ÃƒÂ¦Ã¢â‚¬â€�Ã‚Â¶ÃƒÂ¥Ã‹â€ Ã¯Â¿Â½ÃƒÂ¥Ã‚Â§Ã¢â‚¬Â¹ÃƒÂ¥Ã…â€™Ã¢â‚¬â€œ:ÃƒÂ¥Ã‚Â½Ã¢â‚¬Å“ÃƒÂ¥Ã¢â‚¬Â°Ã¯Â¿Â½ÃƒÂ§Ã‚Â±Ã‚Â»ÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ¥Ã‚Â¯Ã‚Â¹ÃƒÂ¨Ã‚Â±Ã‚Â¡ÃƒÂ¥Ã‹â€ Ã¢â‚¬ÂºÃƒÂ¥Ã‚Â»Ã‚ÂºÃƒÂ¥Ã‚Â®Ã…â€™ÃƒÂ¦Ã‚Â¯Ã¢â‚¬Â¢ÃƒÂ¤Ã‚Â¹Ã¢â‚¬Â¹ÃƒÂ¥Ã¢â‚¬Â°Ã¯Â¿Â½
 	public BaseDaoImpl(){
 		Class clazz = this.getClass();
 		Type type = clazz.getGenericSuperclass();
@@ -28,10 +28,7 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport{
 	
 	public void save(T t) {
 		this.getHibernateTemplate().save(t);
-		/*try {
-		} catch (Exception e) {
-			throw new AppException("Ã¥Â¯Â¹Ã¤Â¸ï¿½Ã¨ÂµÂ·Ã¯Â¼Å’Ã¦â€¢Â°Ã¦ï¿½Â®Ã¥Âºâ€œÃ¦Å“ï¿½Ã¥Å Â¡Ã¥â„¢Â¨Ã¦Â²Â¡Ã¦Å“â€°Ã¥ï¿½Â¯Ã¥Å Â¨Ã¯Â¼Å’Ã¨Â¯Â·Ã¨ï¿½â€�Ã§Â³Â»Ã§Â®Â¡Ã§ï¿½â€ Ã¥â€˜ËœÃ¯Â¼ï¿½",e);
-		}*/
+		
 	}
 
 	public void update(T t) {
@@ -65,26 +62,6 @@ public abstract class BaseDaoImpl<T> extends HibernateDaoSupport{
 		return count.get(0).intValue();
 	}
 	
-	//Ã¥Â¼ÂºÃ¥Ë†Â¶Ã¥Â­ï¿½Ã§Â±Â»Ã¨Â¦â€ Ã§â€ºâ€“doQbcÃ¦â€“Â¹Ã¦Â³â€¢
+	//ÃƒÂ¥Ã‚Â¼Ã‚ÂºÃƒÂ¥Ã‹â€ Ã‚Â¶ÃƒÂ¥Ã‚Â­Ã¯Â¿Â½ÃƒÂ§Ã‚Â±Ã‚Â»ÃƒÂ¨Ã‚Â¦Ã¢â‚¬Â ÃƒÂ§Ã¢â‚¬ÂºÃ¢â‚¬â€œdoQbcÃƒÂ¦Ã¢â‚¬â€œÃ‚Â¹ÃƒÂ¦Ã‚Â³Ã¢â‚¬Â¢
 	protected abstract void doQbc(DetachedCriteria dc,BaseQueryModel qm);
 }
-/*
-public static void main(String[] args) {
-	ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml","applicationContext-dep.xml");
-	DepDao dao = (DepDao) ctx.getBean("depDao");
-	System.out.println(dao.getCount(new DepQueryModel()));
-}
-*/
-/*
-public Integer getCount(DepQueryModel dqm) {
-	String hql = "select count(uuid) from DepModel where 1 = 1 ";
-	if(dqm.getName()!=null && dqm.getName().trim().length()>0){
-		hql += " and name like ? ";
-	}
-	if(dqm.getTele()!=null && dqm.getTele().trim().length()>0){
-		hql += " and tele like ? ";
-	}
-	List<Long> count = this.getHibernateTemplate().find(hql,"%"+dqm.getName()+"%","%"+dqm.getTele()+"%");
-	return count.get(0).intValue();
-}
-*/

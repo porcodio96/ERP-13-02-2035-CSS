@@ -58,21 +58,8 @@ public class EmpEbo implements EmpEbi{
 		temp.setGender(em.getGender());
 		temp.setDm(em.getDm());
 		
-		//hibernateÃ¤Â¸â‚¬Ã§ÂºÂ§Ã§Â¼â€œÃ¥Â­ËœÃ¤Â¸Â­Ã§Å¡â€žÃ¥Â¯Â¹Ã¨Â±Â¡OIDÃ¤Â¸ï¿½Ã¥ï¿½Â¯Ã¤Â¿Â®Ã¦â€�Â¹Ã¯Â¼Å’Ã¥â€ºÂ Ã¦Â­Â¤Ã¦Å â€ºÃ¥â€¡ÂºÃ¥Â¼â€šÃ¥Â¸Â¸
-		//temp.getDm().setUuid(em.getDm().getUuid());
+	
 		
-		/*
-		//Ã§â€�Â±Ã¤ÂºÅ½Ã¤Â½Â¿Ã§â€�Â¨getÃ¦â€“Â¹Ã¦Â³â€¢Ã¥Å Â Ã¨Â½Â½Ã§Å¡â€žÃ¥Â¯Â¹Ã¨Â±Â¡Ã¦â€”Â¶POÃ¥Â¯Â¹Ã¨Â±Â¡
-		//Ã¦Â­Â¤Ã¦â€”Â¶Ã¤Â¿Â®Ã¦â€�Â¹Ã§Å¡â€žÃ¥Â¯Â¹Ã¨Â±Â¡Ã¥Â°â€ Ã¤Â»Å½DO->PO
-		//Ã¤Â¸Â¤Ã¤Â¸ÂªÃ¥Â¯Â¹Ã¨Â±Â¡Ã¥Â°â€ Ã¥â€¦Â·Ã¦Å“â€°Ã§â€ºÂ¸Ã¥ï¿½Å’Ã§Å¡â€žOIDÃ¯Â¼Å’Ã¤Â½ï¿½Ã¤ÂºÅ½Ã¥ï¿½Å’Ã¤Â¸â‚¬Ã¤Â¸â‚¬Ã§ÂºÂ§Ã§Â¼â€œÃ¥Â­ËœÃ§Â©ÂºÃ©â€”Â´Ã¥â€ â€¦Ã¯Â¼Å’Ã¥Â¼â€¢Ã¥ï¿½â€˜IDÃ©â€¡ï¿½Ã¥Â¤ï¿½Ã¥â€ Â²Ã§Âªï¿½
-		//Ã¥Â°â€ Ã§Â¼ÂºÃ¥Â°â€˜Ã§Å¡â€žÃ¥â‚¬Â¼Ã¥â€¦Â¨Ã©Æ’Â¨Ã¨Âµâ€¹Ã¥â‚¬Â¼Ã¤Â¸Å Ã¥Å½Â»
-		em.setUserName(temp.getUserName());
-		em.setPwd(temp.getPwd());
-		em.setLastLoginIp(temp.getLastLoginIp());
-		em.setLastLoginTime(temp.getLastLoginTime());
-		em.setLoginTimes(temp.getLoginTimes());
-		empDao.update(em);
-		*/
 	}
 
 	public EmpModel get(Serializable uuid) {
@@ -112,11 +99,7 @@ public class EmpEbo implements EmpEbi{
 			}
 			loginEm.setResValue(sbf.toString());
 		}
-		/*
-		else{
-			throw new AppException("INFO_EMP_USERNAME_OR_PWD_ERROR");
-		}
-		*/
+		
 		return loginEm;
 	}
 

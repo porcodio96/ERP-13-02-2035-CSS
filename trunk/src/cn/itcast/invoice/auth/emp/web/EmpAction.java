@@ -21,29 +21,6 @@ public class EmpAction extends BaseAction{
 	//2.Ã¥Â°ï¿½Ã¨Â¯â€¢Ã¦â‚¬Â§Ã§Å¡â€žÃ¤Â½Â¿Ã§â€�Â¨publicÃ¦ï¿½Æ’Ã©â„¢ï¿½Ã¨Â®Â¿Ã©â€”Â® Ã§â€�Â¨
 	//3.setUm() Ã¦Å“â€°
 	//3.1 Ã¥Å“Â¨Ã¦Â¯ï¿½Ã¦Â¬Â¡Ã¨Â°Æ’Ã§â€�Â¨Ã¥Â¯Â¹Ã¨Â±Â¡Ã¦â€”Â¶Ã¯Â¼Å’Ã¦â€°Â§Ã¨Â¡Å’setÃ¦â€“Â¹Ã¦Â³â€¢Ã¯Â¼Å’Ã¥Ë†â€ºÃ¥Â»ÂºÃ¤Â¸â‚¬Ã¤Â¸ÂªÃ¦â€“Â°Ã¥Â¯Â¹Ã¨Â±Â¡
-	/*
-	localhost:8080/ERP/emp_fn.action?um.uuid=1&um.name=2&um.age=3
-	um.uuid
-	um.get?  um.public? new UserModel() setUm(new...)  setUuid(1);
-	um.get?	 um.public? new UserModel() setUm(new...)  setName(2);
-	um.get?	 um.public? new UserModel() setUm(new...)  setAge(3);
-	age name uuid 
-	*/
-	/*
-	private UserModel um = new UserModel();
-	
-	public void setUm(UserModel um) {
-		System.out.println("set.........................");
-		this.um = um;
-	}
-
-	public String fn(){
-		System.out.println(um.getUuid());
-		System.out.println(um.getName());
-		System.out.println(um.getAge());
-		return "fn";
-	}
-	*/
 	
 	/**
 	 * public field

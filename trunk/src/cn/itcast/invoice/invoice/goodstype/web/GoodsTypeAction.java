@@ -39,6 +39,13 @@ public class GoodsTypeAction extends BaseAction{
 	 * this public element is a public element
 	 *
 	 */
+	public Long supplierUuid;
+	
+	private List<GoodsTypeModel> gtmList;
+	/**
+	 * this public element is a public element
+	 *
+	 */
 	public void setSupplierEbi(SupplierEbi supplierEbi) {
 		this.supplierEbi = supplierEbi;
 	}
@@ -103,13 +110,7 @@ public class GoodsTypeAction extends BaseAction{
 	}
 	
 	//--ajax---------------------------------------------
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	public Long supplierUuid;
 	
-	private List<GoodsTypeModel> gtmList;
 	/**
 	 * this public element is a public element
 	 *

@@ -30,7 +30,10 @@ public class EmpAction extends BaseAction{
 	 * public field
 	 */
 	public EmpQueryModel eqm = new EmpQueryModel();
-
+	/**
+	 * public field
+	 */
+	public Long[] roleUuids;
 	private EmpEbi empEbi;
 	private DepEbi depEbi;
 	private RoleEbi roleEbi;
@@ -73,10 +76,6 @@ public class EmpAction extends BaseAction{
 		return LIST;
 	}
 
-	/**
-	 * public field
-	 */
-	public Long[] roleUuids;
 	//Ã¤Â¿ï¿½Ã¥Â­Ëœ/Ã¤Â¿Â®Ã¦â€�Â¹
 	/**
 	 * public field

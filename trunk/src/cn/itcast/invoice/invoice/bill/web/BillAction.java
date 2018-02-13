@@ -18,6 +18,7 @@ import cn.itcast.invoice.util.format.FormatUtil;
  *
  */
 public class BillAction extends BaseAction{
+	private String xlsName;
 	/**
 	 * this public element is a public element
 	 *
@@ -101,7 +102,7 @@ public class BillAction extends BaseAction{
 	public InputStream getDownloadExcel() {
 		return downloadExcel;
 	}
-	private String xlsName;
+	
 	/**
 	 * this public element is a public element
 	 * 

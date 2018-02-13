@@ -27,6 +27,10 @@ public class OrderEbo implements OrderEbi{
 	 *
 	 */
 	
+	private final Integer[] inTypes = {
+			OrderModel.ORDER_TYPE_OF_BUY_IN_STORE,
+			//ç¼ºå°‘1ç§�
+			};
 	public void setOrderDao(OrderDao orderDao) {
 		this.orderDao = orderDao;
 	}
@@ -296,14 +300,7 @@ public class OrderEbo implements OrderEbi{
 		om.setType(OrderModel.ORDER_TYPE_OF_BUY_IN_STORE);
 	}
 
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	private final Integer[] inTypes = {
-			OrderModel.ORDER_TYPE_OF_BUY_IN_STORE,
-			//ç¼ºå°‘1ç§�
-			};
+
 	/**
 	 * this public element is a public element
 	 *

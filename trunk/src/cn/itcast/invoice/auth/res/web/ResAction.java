@@ -34,7 +34,11 @@ public class ResAction extends BaseAction{
 	 *
 	 */
 	private RoleEbi roleEbi;
-	
+	/**
+	 * this public element is a public element
+	 *
+	 */
+	public Long[] roleUuids;
 	/**
 	 * this public element is a public element
 	 *
@@ -63,11 +67,7 @@ public class ResAction extends BaseAction{
 		return LIST;
 	}
 	
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	public Long[] roleUuids;
+	
 	//Ã¤Â¿ï¿½Ã¥Â­Ëœ/Ã¤Â¿Â®Ã¦â€�Â¹
 	/**
 	 * this public element is a public element

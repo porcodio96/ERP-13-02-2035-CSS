@@ -185,11 +185,11 @@ public class OrderAction extends BaseAction{
 		    }else supplierList.remove(i);
 		}
 
-		List<GoodsTypeModel> gtmList = goodsTypeEbi.getAllUnionBySupplier(supplierList.get(0).getUuid());
-		List<GoodsModel> gmList = goodsEbi.getAllByGtmUuid(gtmList.get(0).getUuid());
+		List<GoodsTypeModel> gtmListInt = goodsTypeEbi.getAllUnionBySupplier(supplierList.get(0).getUuid());
+		List<GoodsModel> gmListInt = goodsEbi.getAllByGtmUuid(gtmListInt.get(0).getUuid());
 		put("supplierList",supplierList);
-		put("gtmList",gtmList);
-		put("gmList",gmList);
+		put("gtmList",gtmListInt);
+		put("gmList",gmListInt);
 		return "buyInput";
 	}
 	
@@ -369,8 +369,8 @@ public class OrderAction extends BaseAction{
 		gmList = goodsEbi.getAllByGtmUuid(gtmList.get(0).getUuid());
 		//ÃƒÂ¥Ã‹â€ Ã‚Â ÃƒÂ©Ã¢â€žÂ¢Ã‚Â¤ÃƒÂ¦Ã…Â½Ã¢â‚¬Â°ÃƒÂ¥Ã‚Â·Ã‚Â²ÃƒÂ§Ã‚Â»Ã¯Â¿Â½ÃƒÂ¤Ã‚Â½Ã‚Â¿ÃƒÂ§Ã¢â‚¬ï¿½Ã‚Â¨ÃƒÂ¨Ã‚Â¿Ã¢â‚¬Â¡ÃƒÂ§Ã…Â¡Ã¢â‚¬Å¾ÃƒÂ¥Ã¢â‚¬Â¢Ã¢â‚¬Â ÃƒÂ¥Ã¢â‚¬Å“Ã¯Â¿Â½
 		for(int i = gmList.size()-1;i>=0;i--){
-			GoodsModel gm = gmList.get(i);
-			if(uuids.contains(gm.getUuid())){
+			GoodsModel gmInt = gmList.get(i);
+			if(uuids.contains(gmInt.getUuid())){
 				//ÃƒÂ¨Ã‚Â¯Ã‚Â¥ÃƒÂ¥Ã¢â‚¬Â¢Ã¢â‚¬Â ÃƒÂ¥Ã¢â‚¬Å“Ã¯Â¿Â½ÃƒÂ¥Ã‚Â·Ã‚Â²ÃƒÂ§Ã‚Â»Ã¯Â¿Â½ÃƒÂ¤Ã‚Â½Ã‚Â¿ÃƒÂ§Ã¢â‚¬ï¿½Ã‚Â¨ÃƒÂ¨Ã‚Â¿Ã¢â‚¬Â¡
 				gmList.remove(i);
 			}

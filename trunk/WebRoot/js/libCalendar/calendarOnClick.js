@@ -5,7 +5,9 @@
  */
 function calendarOnClick(obj){
 
-		if(obj.innerHTML != "")  this.dateInput.value = obj.value;
+		if(obj.innerHTML != "")  {
+			this.dateInput.value = obj.value;
+			}
 		this.hide();
 		//自定义真值隐藏元素组件赋值
 		//当前组件为targetObj

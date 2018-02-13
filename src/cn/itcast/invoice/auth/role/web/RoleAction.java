@@ -15,7 +15,17 @@ import cn.itcast.invoice.util.base.BaseAction;
  *
  */
 public class RoleAction extends BaseAction{
-	
+	/**
+	 * this public element is a public element
+	 *
+	 */
+	public Long[] resUuids;
+	//Ã¨ï¿½Å“Ã¥ï¿½â€¢Ã§Å¡â€žuuidÃ¦â€¢Â°Ã§Â»â€ž
+	/**
+	 * this public element is a public element
+	 *
+	 */
+	public Long[] menuUuids;
 	/**
 	 * this public element is a public element
 	 *
@@ -67,17 +77,7 @@ public class RoleAction extends BaseAction{
 		return LIST;
 	}
 	//Ã¨Âµâ€žÃ¦Âºï¿½Ã§Å¡â€žuuidÃ¦â€¢Â°Ã§Â»â€ž
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	public Long[] resUuids;
-	//Ã¨ï¿½Å“Ã¥ï¿½â€¢Ã§Å¡â€žuuidÃ¦â€¢Â°Ã§Â»â€ž
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	public Long[] menuUuids;
+
 	//Ã¤Â¿ï¿½Ã¥Â­Ëœ/Ã¤Â¿Â®Ã¦â€�Â¹
 	/**
 	 * this public element is a public element

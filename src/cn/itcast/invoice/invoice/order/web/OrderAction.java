@@ -34,6 +34,12 @@ public class OrderAction extends BaseAction{
 	 * this public element is a public element
 	 *
 	 */
+	public Long odmUuid;
+	private OrderDetailModel odm;
+	/**
+	 * this public element is a public element
+	 *
+	 */
 	public OrderQueryModel oqm = new OrderQueryModel();
 
 	private OrderEbi orderEbi;
@@ -494,12 +500,7 @@ public class OrderAction extends BaseAction{
 	}
 	
 	//--ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â¥ÃƒÂ¥Ã‚ÂºÃ¢â‚¬Å“--------------------------------
-	/**
-	 * this public element is a public element
-	 *
-	 */
-	public Long odmUuid;
-	private OrderDetailModel odm;
+	
 	
 	/**
 	 * this public element is a public element

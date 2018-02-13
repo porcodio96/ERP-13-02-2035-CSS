@@ -21,6 +21,8 @@ public class StoreAction extends BaseAction{
 	 *
 	 */
 	public StoreModel sm = new StoreModel();
+	private boolean msg;
+
 	/**
 	 * this public element is a public element
 	 *
@@ -140,7 +142,6 @@ public class StoreAction extends BaseAction{
 	public boolean isHas() {
 		return has;
 	}
-	private boolean msg;
 	/**
 	 * this public element is a public element
 	 *

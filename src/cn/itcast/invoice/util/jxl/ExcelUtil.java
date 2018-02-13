@@ -22,7 +22,14 @@ import jxl.write.WriteException;
  *
  */
 public class ExcelUtil {
-	
+	private static Map<Integer, Alignment> alignMap;
+	static{
+		alignMap = new HashMap<Integer, Alignment>();
+		alignMap.put(0, Alignment.LEFT);
+		alignMap.put(1, Alignment.CENTRE);
+		Integer two = 2;
+		alignMap.put(two , Alignment.RIGHT);
+	}
 	/**
 	 * 创建Excel文件流
 	 * @return 
@@ -112,14 +119,7 @@ public class ExcelUtil {
 		}
 	}
 	
-	private static Map<Integer, Alignment> alignMap;
-	static{
-		alignMap = new HashMap<Integer, Alignment>();
-		alignMap.put(0, Alignment.LEFT);
-		alignMap.put(1, Alignment.CENTRE);
-		Integer two = 2;
-		alignMap.put(two , Alignment.RIGHT);
-	}
+
 	
 	private static WritableCellFormat setBorderTop(char value, WritableCellFormat wcf) throws WriteException {
 		if(value == '1'){

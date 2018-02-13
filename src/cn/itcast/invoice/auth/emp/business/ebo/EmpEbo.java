@@ -19,7 +19,8 @@ import cn.itcast.invoice.util.format.MD5Utils;
  *
  */
 public class EmpEbo implements EmpEbi{
-	public static int two = 2, three = 3;
+	
+	private static int two = 2, three = 3;
 	private EmpDao empDao;
 	private ResDao resDao;
 	

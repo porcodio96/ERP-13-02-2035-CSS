@@ -4,9 +4,12 @@
  */
 function calendarShow()
 {
+	var msg1 = "对不起！传入参数不对！";
+	var ms2 ="传入参数错误!";
 	if (arguments.length >  3  || arguments.length == 0)
 	{
-		alert("对不起！传入参数不对！" );
+		
+		alert(msg1);
 		return;
 	}   
 	var _date = null;
@@ -25,10 +28,13 @@ function calendarShow()
 	_evObj = _evObj || _date;
 	var inputObj = _date;
 	var targetObj = _evObj;
-	if(!_date){alert("传入参数错误!"); return;}
+	
+	if(!_date){alert(msg2); return;}
 	this.dateInput = _date;
 	_date = _date.value;
-	if(_date == "" && _initValue) _date = _initValue;   
+	if(_date == "" && _initValue){ 
+		_date = _initValue;  
+		}
 	this.bindDate(_date);        
 	var _target = getPosition(_evObj);   
 	var _obj = getObjById("Calendar");

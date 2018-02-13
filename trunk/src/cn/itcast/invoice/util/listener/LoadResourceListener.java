@@ -38,7 +38,7 @@ public class LoadResourceListener implements ServletContextListener{
 		//æœ�åŠ¡å™¨å�¯åŠ¨æ—¶ï¼ŒåŠ è½½æ‰€æœ‰å…¨èµ„æº�æ•°æ�®:JDBC
 		Connection conn = null;
 		try {
-			ArrayList<String> Info = getDBInfo();
+			List<String> Info = getDBInfo();
 		} catch (IOException e1) {
 			 System.out.println("Something was wrong");
 		}
@@ -76,8 +76,8 @@ public class LoadResourceListener implements ServletContextListener{
 	 * @return
 	 * @throws IOException
 	 */
-	private ArrayList<String> getDBInfo() throws IOException {
-		ArrayList<String> DBInfo = new ArrayList();
+	private List<String> getDBInfo() throws IOException {
+		List<String> DBInfo = new ArrayList();
 		try {
 			in = new FileInputStream("src/cn/itcast/invoice/util/listener/db.properties");
 			props.load(in);

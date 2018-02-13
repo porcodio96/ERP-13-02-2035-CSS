@@ -26,6 +26,11 @@ public class GeneratorUtil {
 	small	emp		empEbi	empDao
 	little	e		em		eqm
 	*/
+	/**
+	 * 
+	 * @param clazz
+	 * @throws Exception
+	 */
 	public GeneratorUtil(Class clazz)throws Exception{
 		this.clazz = clazz;
 		//-1.Ã¦â€¢Â°Ã¦ï¿½Â®Ã¥Ë†ï¿½Ã¥Â§â€¹Ã¥Å’â€“
@@ -52,6 +57,10 @@ public class GeneratorUtil {
 	}
 	
 	//8.Ã§â€�Å¸Ã¦Ë†ï¿½applicationContext.xml
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorApplicationContextXml() throws Exception{
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;

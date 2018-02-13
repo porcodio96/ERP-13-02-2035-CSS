@@ -96,7 +96,8 @@ public class BillAction extends BaseAction{
 	//Ã¨Å½Â·Ã¥ï¿½â€“Ã©Â¥Â¼Ã¥â€ºÂ¾
 	/**
 	 * this public element is a public element
-	 *
+	 *         
+	 * @throws java.io.IOException
 	 */
 	public void billForPie() throws IOException{
 		//1.Ã¨Å½Â·Ã¥ï¿½â€“jfreechartÃ¥Â¯Â¹Ã¨Â±Â¡Ã¯Â¼Å’Ã¥Â°â€ Ã¥â€¦Â¶Ã¨Â£â€¦Ã¥â€¦Â¥Ã¦Âµï¿½Ã¥Â¯Â¹Ã¨Â±Â¡
@@ -122,7 +123,8 @@ public class BillAction extends BaseAction{
 	private String xlsName;
 	/**
 	 * this public element is a public element
-	 *
+	 * 
+	 * @throws UnsupportedEncodingException
 	 */
 	public String getXlsName() throws UnsupportedEncodingException {
 		System.out.println(xlsName);
@@ -131,7 +133,8 @@ public class BillAction extends BaseAction{
 
 	/**
 	 * this public element is a public element
-	 *
+	 * 
+	 * @throws Exception
 	 */
 	public String downloadExcelBill() throws Exception{
 		xlsName = "Ã¨Â´Â§Ã§â€°Â©Ã§Â»Å¸Ã¨Â®Â¡Ã¦Å Â¥Ã¨Â¡Â¨Ã¯Â¼Â»"+FormatUtil.formatDate(System.currentTimeMillis())+"Ã¯Â¼Â½.xls";

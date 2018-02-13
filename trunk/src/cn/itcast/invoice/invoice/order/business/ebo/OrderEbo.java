@@ -149,7 +149,7 @@ public class OrderEbo implements OrderEbi{
 	}
 
 	
-	private Integer[] buyCheckTypes = {
+	private final Integer[] buyCheckTypes = {
 			OrderModel.ORDER_TYPE_OF_BUY_NO_CHECK,
 			//OrderModel.ORDER_TYPE_OF_BUY_RETURN_NO_CHECK
 			};
@@ -218,7 +218,7 @@ public class OrderEbo implements OrderEbi{
 	 * this public element is a public element
 	 *
 	 */
-	private Integer[] taskTypes = {
+	private final Integer[] taskTypes = {
 			OrderModel.ORDER_TYPE_OF_BUY_CHECK_PASS,
 			OrderModel.ORDER_TYPE_OF_BUY_BUYING,
 			OrderModel.ORDER_TYPE_OF_BUY_IN_STORE,
@@ -310,7 +310,7 @@ public class OrderEbo implements OrderEbi{
 	 * this public element is a public element
 	 *
 	 */
-	private Integer[] inTypes = {
+	private final Integer[] inTypes = {
 			OrderModel.ORDER_TYPE_OF_BUY_IN_STORE,
 			//ç¼ºå°‘1ç§�
 			};

@@ -19,13 +19,7 @@ public class GeneratorUtil {
 	private String big;
 	private String small;
 	private String little;
-	/*
-	pkg		cn.itcast.invoice.auth.emp
-	rootDir	src/cn/itcast/invoice/auth/emp
-	big		Emp		EmpModel	EmpQueryModel
-	small	emp		empEbi	empDao
-	little	e		em		eqm
-	*/
+	
 	/**
 	 * 
 	 * @param clazz
@@ -151,6 +145,10 @@ public class GeneratorUtil {
 		
 	}
 	//7.Ã§â€�Å¸Ã¦Ë†ï¿½Action
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorAction() throws Exception{
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;
@@ -324,6 +322,10 @@ public class GeneratorUtil {
 	         }
 	}
 	//6.Ã§â€�Å¸Ã¦Ë†ï¿½Ebo
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorEbo() throws Exception{
 		File f = null;
 		BufferedWriter bw= null;
@@ -480,6 +482,10 @@ public class GeneratorUtil {
 
 	}
 	//5.Ã§â€�Å¸Ã¦Ë†ï¿½Ebi
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorEbi() throws Exception{
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;
@@ -537,6 +543,10 @@ public class GeneratorUtil {
 		
 	}
 	//4.Ã§â€�Å¸Ã¦Ë†ï¿½DaoImpl
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorDaoImpl() throws Exception{
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;
@@ -615,6 +625,10 @@ public class GeneratorUtil {
 		
 	}
 	//3.Ã§â€�Å¸Ã¦Ë†ï¿½Dao
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorDao() throws Exception{
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;
@@ -665,6 +679,10 @@ public class GeneratorUtil {
 		
 	}
 	//2.Ã§â€�Å¸Ã¦Ë†ï¿½Model.hbm.xml
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorHbmXml() throws Exception{
 		File f = null;
 		BufferedWriter bw= null;
@@ -737,12 +755,12 @@ public class GeneratorUtil {
 	
 		
 	}
-/*
-"+big+"
-"+small+"
-"+pkg+"
-*/
+
 	//1.Ã§â€�Å¸Ã¦Ë†ï¿½QueryModel
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	private void generatorQueryModel() throws Exception {
 		//1.Ã¥Ë†â€ºÃ¥Â»ÂºÃ¦â€“â€¡Ã¤Â»Â¶
 		File f = null;
@@ -816,12 +834,15 @@ public class GeneratorUtil {
 	private void dataInit() {
 		//pkg;
 		String allPkg = clazz.getPackage().getName();
-		pkg = allPkg.substring(0,allPkg.length()-3);
+		int zero = 0;
+		int three = 3;
+		pkg = allPkg.substring(zero,allPkg.length()-three);
 		//rootDir;			src/cn/itcast/invoice/auth/emp
 		rootDir = "src/"+pkg.replace(".", "/");
 		//big;		Emp
 		String allClazzName = clazz.getSimpleName();
-		big = allClazzName.substring(0, allClazzName.length()-5);
+		int five = 5;
+		big = allClazzName.substring(zero, allClazzName.length()-five);
 		//little;
 		little = big.substring(0, 1).toLowerCase();
 		//small;

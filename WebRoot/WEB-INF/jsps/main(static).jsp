@@ -59,12 +59,11 @@
 		<!--"content"end-->
 		<div class="footer">
 			<div style="margin-top:5px;">
-				<table width="98%" border="0" cellpadding="0" cellspacing="0"
-					align="center">
+				<table class="table">
 					<tr>
-						<td width="82%"><img src="images/icon_1.gif" />&nbsp; <a
+						<td width="82%"><img class="img" />&nbsp; <a
 							class="lanyo" href="www.itcast.cn">传智播客 蓝源信息技术 2014</a></td>
-						<td width="18%" valign="middle"><img src="images/icon_2.gif" />&nbsp;
+						<td width="18%" class="tr td table"><img class="img2" />&nbsp;
 							<a class="lanyo" href="#">如有疑问请与技术人员联系</a></td>
 					</tr>
 				</table>

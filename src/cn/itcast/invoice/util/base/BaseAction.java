@@ -59,7 +59,7 @@ public class BaseAction extends ActionSupport{
 	 * this public element is a public element
 	 *
 	 */ 
-	private String actionName;
+	private String internName;
 	
 	/**
 	 * this public element is a public element
